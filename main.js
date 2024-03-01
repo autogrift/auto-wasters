@@ -9,7 +9,7 @@ connectButton.onclick = async () => {
     if(walletController.walletConnected){
       // Hide the button
       connectButton.disabled = true;
-      connectButton.innerText = 'Wallet Connected'
+      connectButton.innerText = 'Connected'
 
       convertButton.disabled = false;
     }
@@ -26,7 +26,7 @@ convertButton.onclick = async () => {
 
 const amountRemaining = document.getElementById('amount-remaining');
 walletController.getTokensLeft().then((tokensLeft) => {
-  amountRemaining.innerText = tokensLeft + ' / 512';
+  amountRemaining.innerText = tokensLeft + ' / 256';
 });
 
 function loop() {

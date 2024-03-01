@@ -26,19 +26,21 @@
   <body>
     <main class='main'>
       <h1 class="title">Auto Wasters</h1>
-      <img src="./images/autowaster.svg" alt="Auto Wasters" width="75%"/>
+      <span>
+        <button id="connect-wallet" class="button">Connect</button>
+        <button id="mint" class="button" disabled>Mint</button>
+      </span>
+      <code id="amount-remaining">0/512 Minted</code>
+      <p id="error-message"></p>
+      <a href="https://discord.gg/KUs7DWnb">
+        <img src="./images/autowaster.svg" alt="Auto Wasters" width="75%"/>
+      </a>
       <h5>On-chain art aficionados, take notice.</h5>
       <ul>
         <li>Network with established and emerging glitch artists, engage in meaningful discussions, and get inspired.</li>
         <li>Regular airdrops of curated on-chain glitch art pieces from renowned and emerging artists within the glitch art movement.</li>
         <li>Membership in a pioneering space - be at the forefront of all things glitch on Blast L2.</li>
       </ul>
-      <span>
-        <button id="connect-wallet" class="button">Connect Wallet</button>
-        <button id="mint" class="button" disabled>Mint</button>
-      </span>
-      <code id="amount-remaining">0/512 Minted</code>
-      <p id="error-message"></p>
       
     </main>
     <script type="module" src="./main.js"></script>
