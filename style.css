@@ -1,0 +1,44 @@
+body {
+  color: #fffffa;
+  background-color: #000000;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+}
+
+
+
+.button:disabled {
+  pointer-events: none;
+  border-color: #a0a0a0;
+  transition: all 1s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  border-color: #198485;
+  transition: all 0.5s ease-in-out;
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#error-message {
+  font-size: 1rem;
+  color: #ffAAAA;
+}
